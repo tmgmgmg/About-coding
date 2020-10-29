@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コーディングまとめ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+<body>
+  <h1 class="title">コーディングまとめ</h1>
+  <div class="container">
+    <div id="tab-container">
+      <div class="tab current-tab">命名規則・スタイル</div>
+      <div class="tab">禁止事項</div>
+      <div class="tab">注意事項</div>
+      <div class="tab">推奨事項</div>
+      <div class="tab">参考・サンプルまとめ</div>
+      <div class="tab">チェックリスト</div>
+    </div>
+    <div id="tab-content">
+      <div class="tabcontent tab-active">
+        <h2><span>命名規則・コーディングスタイル</span></h2>
+        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
+        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
+        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
+        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
+        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
+      </div>
+      <div class="tabcontent">
+        <h2>禁止事項</h2>
+        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
+        <ul>
+          <li>
+            <h4 class="sample-list">ｐタグ禁止</h4>
+            </p>
+            <p class="margin-left">以下のように書く。</p>
+            <p class="margin-left">
+              <div class="sourceview">
+                <pre class="brush: html;">
+              &lt;div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4 class="sample-list">table利用制限</h4>
+            <p class="margin-left">tableタグは、
+              <br>・お問い合わせ
+              <br>・会社内容
+              <br>・採用情報
+              <br>といった指定の場所以外は使用しない。
+            </p>
+          </li>
+          <li>
+            <h4 class="sample-list">CDN禁止</h4>
+            <p class="margin-left">
+              jQueryなど使用の際はCDNではなく、ファイルを落としてきて、相対パスでリンクを貼る。
+            </p>
+            <p class="margin-left">
+              ※googleフォント、住所自動入力のAjaxZip3は例外
+            </p>
+          </li>
+          <li>
+            <h4 class="sample-list">webフォント禁止</h4>
+            <p class="margin-left">指定のgoogleフォントのみ使用可。</p>
+            <p class="margin-left">googleフォントにないフォントの指示があった場合は、画像としてpsdから切り出す。
+              <br><span class="red">※imgタグのalt属性には、切り出した文章を全て入力すること</span>
+            </p>
+          </li>
+          <li>
+            <h4 class="sample-list">画像ファイル名の_(アンダーバー)禁止</h4>
+            <p class="margin-left">―(ハイフン)は可。</p>
+          </li>
+        </ul>
+        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
+        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
+        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
+        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
+      </div>
+      <div class="tabcontent caution">
+        <h2>注意事項</h2>
+        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
+
+        <h3>【IE】</h3>
+        <ul class="caution-list-ie">
+          <li>
+            <p class="sample-list">position</ｐ>
+            <p>top、leftなど縦横の値指定必須
+              <br>(⇒positionの初期位置設定が異なるため)</p>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p>RubyonRailsを使ったサンプルプログラムを作成します。</p>
+        <p>RubyonRailsを使ったサンプルプログラムを作成します。</p>
+        <p>RubyonRailsを使ったサンプルプログラムを作成します。</p>
+      </div>
+      <div class="tabcontent">
+        <h2>推奨事項</h2>
+        <p>C#を使ったサンプルプログラムを作成します。</p>
+        <p>C#を使ったサンプルプログラムを作成します。</p>
+      </div>
+      <div class="tabcontent">
+        <h2>参考・サンプルまとめ</h2>
+        <ul>
+          <li>
+            <p class="no-br sample-list">メールフォーム例</p><a class="margin-left" href="http://ezcodingrules.ezdev.jp/?Rule03#o17de83f">http://ezcodingrules.ezdev.jp/?Rule03#o17de83f</a>
+            <input id="acd-check1" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check1">クリックでコードを確認</label>
+            <div class="acd-content">
+              <script src="https://gist.github.com/tmgmgmg/c3d257aec4b4aa222da08bde52d3816d.js"></script>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">ホバーアクションを追加する際の設定</p>
+            <div class="sourceview">
+              <pre class="brush: html;">
+@media screen and (min-width: 992px) {
+}</pre>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">レスポンシブ対応テーブル例</p>
+            <table class="table  table_float">
+              <tbody>
+                <tr>
+                  <th>雇用形態</th>
+                  <th>パート・アルバイト</th>
+                </tr>
+                <tr>
+                  <th>募集内容</th>
+                  <th>機械加工・組立・検査他</th>
+                </tr>
+                <tr>
+                  <th>年齢</th>
+                  <th>高校生以上　性別・経験等不問
+                  </th>
+                </tr>
+                <tr>
+                  <th>勤務地</th>
+                  <th>〇〇〇〇〇〇</th>
+                </tr>
+                <tr>
+                  <th>勤務時間</th>
+                  <th>1日3時間　週3日～　OK！</th>
+                </tr>
+                <tr>
+                  <th>募集人数</th>
+                  <th>若干名</th>
+                </tr>
+                <tr>
+                  <th>給与</th>
+                  <th>時給800円～</th>
+                </tr>
+                <tr>
+                  <th>営業時間</th>
+                  <th>9:00～17:00</th>
+                </tr>
+                <tr>
+                  <th>応募方法</th>
+                  <th>直接お電話いただくか、メールフォームより採用希望の旨を記載し
+                    送信してください。担当より折り返し連絡をさせていただきます。</th>
+                </tr>
+                <tr>
+                  <th>連絡先/担当</th>
+                  <th>TEL：○○○-○○○-○○○○　/　担当：佐藤</th>
+                </tr>
+              </tbody>
+            </table>
+            <input id="acd-check2" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check2">クリックでコードを確認</label>
+            <div class="acd-content">
+              <script src="https://gist.github.com/tmgmgmg/65e3045a27b3c654f286895ece6b3422.js"></script>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">AOS(アニメーション)について</p>
+            <input id="acd-check3" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check3">クリックで詳細を確認</label>
+            <div class="acd-content">
+              <script src="https://gist.github.com/tmgmgmg/ea5bf8be7d06107d6b0cca530d8179ff.js"></script>
+            </div>
+          </li>
+          <li>
+            <p class="no-br sample-list">横ならび3列をきれいに書く</p>
+            <a class="margin-left" href="https://meshikui.com/2019/04/29/1710/">https://meshikui.com/2019/04/29/1710/</a>
+            <div class="sourceview">
+              <pre class="brush: html;">
+横並び3列をレスポンシブにきれいに書くコード
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  margin-left: 20px;
+}
+@media screen and (min-width: 751px){
+  .item:nth-child(3n+1) {
+  margin-left: 0;
+  }
+}</pre>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">ブラウザごとにCSSを効かせたい場合(最終手段)</p>
+            <p class="margin-left">最終手段なので、なるべく使用しないコーディングをすること。</p>
+            <input id="acd-check5" class="acd-check" type="checkbox">
+            <label class="acd-label" for="acd-check5">クリックでコードを確認</label>
+            <div class="acd-content">
+              <script src="https://gist.github.com/tmgmgmg/f693aac28e17b93958ec1c782c7a27a1.js"></script>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">opacity:0;の時にクリックさせないようにする方法</p>
+            <p class="margin-left">ハンバーガーやアニメーションで、opacityを用いて表示を隠す場合</p>
+            <div class="sourceview">
+              <pre class="brush: html;">
+.example{
+  opacity: 0;
+  visibility:hidden;
+  transition: all 0.5s;
+}
+
+.example:hover{
+  opacity: 1;
+  visibility:visible;
+}
+
+-----こちらでも可-----
+.exsample2{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.exsample2{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+pointer₋iventsを使用する際はIE対策に要素をblockまたはinline₋blockにすること</pre>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">ブラウザごとのflexのバグまとめ</p>
+            <p class="margin-left"><a href="https://qiita.com/hashrock/items/189db03021b0f565ae27">https://qiita.com/hashrock/items/189db03021b0f565ae27</a></p>
+          </li>
+          <li>
+            <p class="sample-list">IE読み込み時に、transitionが動作するバグへの対処</p>
+            <p class="margin-left">以下コードを、各ファイルに記入</p>
+            <div class="sourceview">
+              <pre class="brush: html;">
+---HTML---
+&lt;body class=&quot;preload&quot;&gt;
+
+---CSS---
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+---jQuery---
+$(window).on(&#039;load&#039; , function() {
+  $(&quot;body&quot;).removeClass(&quot;preload&quot;);
+});</pre>
+            </div>
+          </li>
+          <li>
+            <p class="sample-list">レスポンシブ対応の枠</p>
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="tmgmgmg" data-slug-hash="ZEOrNwz" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZEOrNwz">
+              <span>See the Pen <a href="https://codepen.io/tmgmgmg/pen/ZEOrNwz">
+              ZEOrNwz</a> by tmgmgmg (<a href="https://codepen.io/tmgmgmg">@tmgmgmg</a>)
+              on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="tabcontent">
+        <h2>チェックリスト</h2>
+        <ul>
+          <li>画像圧縮</li>
+          <a href="https://tinypng.com/">まとめて圧縮(5MBまで)</a>
+          <br>
+          <a href="https://compressjpeg.com/ja/">jpg圧縮</a>
+          <br>
+          <a href="https://compresspng.com/ja/">png圧縮</a>
+          <li><a href="https://www.videosmaller.com/jp/">動画圧縮</a></li>
+          <li>画像フォルダ⇒「images」に統一する</li>
+          <li>HTMLlintチェック⇒警告・エラーが無いことを確認する<a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
+          <li>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        ■slackで下のタスクチェックリストを作る
+        ②コピペでチェックリスト作ってもらう
+        ■lintチェック　https://validator.w3.org/
+        ■仕様書と実際に作るものの比較画像
+        ■仕様書で使う所
+        ■レスポンシブのサイズは992px,576px,480px
+        ■formで使うもの
+        ■tableで使うもの</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-image town">
+  </div>
+  <div class="bg-image02 town">
+  </div>
+</body>
+</html>
