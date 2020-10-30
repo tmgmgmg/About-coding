@@ -30,7 +30,7 @@
       </div>
       <div class="tabcontent">
         <h2>禁止事項</h2>
-        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
+        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" target="_blank" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
         <ul>
           <li>
             <h4 class="sample-list">ｐタグ禁止</h4>
@@ -72,15 +72,22 @@
             <h4 class="sample-list">画像ファイル名の_(アンダーバー)禁止</h4>
             <p class="margin-left">―(ハイフン)は可。</p>
           </li>
+          <li>
+            <h4 class="sample-list">Bootstrapのclass名に直接styleの指定禁止</h4>
+            <p class="margin-left">
+              ・container<br>
+              ・row<br>
+              ・flex<br>
+              ・col-6<br>
+              などに直接styleの指定はNG。
+            </p>
+            <p class="margin-left"></p>
+          </li>
         </ul>
-        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
-        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
-        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
-        <p>JavaScriptを使ったサンプルプログラムを作成します。</p>
       </div>
       <div class="tabcontent caution">
         <h2>注意事項</h2>
-        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
+        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" target="_blank" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
 
         <h3>【IE】</h3>
         <ul class="caution-list-ie">
@@ -105,7 +112,29 @@
       </div>
       <div class="tabcontent">
         <h2>推奨事項</h2>
-        <p>C#を使ったサンプルプログラムを作成します。</p>
+        <h3>Bootstrap</h3>
+        <ul>
+          <li>
+            <h4 class="sample-list">レスポンシブレイアウトへのBootstrapの導入</h4>
+            <p class="margin-left">公式サイト<a class="margin-left" target="_brank" href="https://getbootstrap.jp/docs/4.5/getting-started/introduction/">https://getbootstrap.jp/docs/4.5/getting-started/introduction/</a></p>
+          </li>
+          <li>
+            <h4 class="sample-list"></h4>
+            <p class="margin-left"></p>
+          </li>
+          <li>
+            <h4 class="sample-list"></h4>
+            <p class="margin-left"></p>
+          </li>
+          <li>
+            <h4 class="sample-list"></h4>
+            <p class="margin-left"></p>
+          </li>
+          <li>
+            <h4 class="sample-list"></h4>
+            <p class="margin-left"></p>
+          </li>
+        </ul>
         <p>C#を使ったサンプルプログラムを作成します。</p>
       </div>
       <div class="tabcontent">
@@ -251,7 +280,7 @@ pointer₋iventsを使用する際はIE対策に要素をblockまたはinline₋
           </li>
           <li>
             <p class="sample-list">ブラウザごとのflexのバグまとめ</p>
-            <p class="margin-left"><a href="https://qiita.com/hashrock/items/189db03021b0f565ae27">https://qiita.com/hashrock/items/189db03021b0f565ae27</a></p>
+            <p class="margin-left"><a href="https://qiita.com/hashrock/items/189db03021b0f565ae27" target="_blank">https://qiita.com/hashrock/items/189db03021b0f565ae27</a></p>
           </li>
           <li>
             <p class="sample-list">IE読み込み時に、transitionが動作するバグへの対処</p>
@@ -295,29 +324,42 @@ $(window).on(&#039;load&#039; , function() {
       <div class="tabcontent">
         <h2>チェックリスト</h2>
         <ul>
-          <li>画像圧縮</li>
-          <a href="https://tinypng.com/">まとめて圧縮(5MBまで)</a>
-          <br>
-          <a href="https://compressjpeg.com/ja/">jpg圧縮</a>
-          <br>
-          <a href="https://compresspng.com/ja/">png圧縮</a>
-          <li><a href="https://www.videosmaller.com/jp/">動画圧縮</a></li>
-          <li>画像フォルダ⇒「images」に統一する</li>
-          <li>HTMLlintチェック⇒警告・エラーが無いことを確認する<a href="https://validator.w3.org/">https://validator.w3.org/</a></li>
           <li>
+            <h4 class="check-list">基本のHTML、CSS、JSセット</h4>
+            <a target="_blank" class="margin-left" href="https://github.com/tmgmgmg/basic-files">https://github.com/tmgmgmg/basic-files</a>
+          </li>
+          <li>
+            <h4 class="check-list">画像圧縮</h4>
+            <p class="no-br margin-left compression">まとめて圧縮(5MBまで)
+              <a class="margin-left" href="https://tinypng.com/" target="_blank">https://tinypng.com/</a>
+              <br>jpg圧縮
+              <a class="margin-left" href="https://compressjpeg.com/ja/" target="_blank">https://compressjpeg.com/ja/</a>
+              <br>png圧縮
+              <a class="margin-left" href="https://compresspng.com/ja/" target="_blank">https://compresspng.com/ja/</a>
+           target="_blank"  </p>
+          </li>
+          <li>
+            <h4 class="check-list">動画圧縮</h4>
+            <a class="margin-left" href="https://www.videosmaller.com/jp/" target="_blank">https://www.videosmaller.com/jp/</a></li>
+          <li>
+            <h4 class="check-list">画像フォルダ⇒「images」に統一する</h4>
+          </li>
+          <li>
+            <h4 class="check-list">HTMLlintチェック</h4>
+            <p class="margin-left no-br">警告・エラーが無いことを確認する</p><a class="margin-left" href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+          </li>
+          <li>
+            <h4 class="check-list">仕様書との比較(例)</h4>
+            <a class="margin-left sample-img" href="images/layout.jpg" target="_blank">仕様書</a>
+            <br>
+            <a class="margin-left sample-img" href="images/sample.png" target="_blank">作成ページ</a>
           </li>
           <li></li>
           <li></li>
           <li></li>
           <li></li>
           <li></li>
-          <li></li>
         </ul>
-        ■slackで下のタスクチェックリストを作る
-        ②コピペでチェックリスト作ってもらう
-        ■lintチェック　https://validator.w3.org/
-        ■仕様書と実際に作るものの比較画像
-        ■仕様書で使う所
         ■レスポンシブのサイズは992px,576px,480px
         ■formで使うもの
         ■tableで使うもの</p>
