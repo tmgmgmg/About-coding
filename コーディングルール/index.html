@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <script src="js/script.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
+
 <body>
   <h1 class="title">コーディングまとめ</h1>
   <div class="container">
@@ -30,8 +32,21 @@
       </div>
       <div class="tabcontent">
         <h2>禁止事項</h2>
-        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" target="_blank" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
+        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" target="_blank"
+          href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
         <ul>
+          <li>
+            <h4 class="sample-list">「./」禁止</h4>
+            </p>
+            <p class="margin-left">以下のように書く。</p>
+            <p class="margin-left">
+              <div class="sourceview">
+                <pre class="brush: html;">
+              div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
+              </div>
+            </p>
+          </li>
+          <li>
           <li>
             <h4 class="sample-list">ｐタグ禁止</h4>
             </p>
@@ -42,6 +57,7 @@
               &lt;div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
               </div>
             </p>
+            <a href="http://ezcodingrules.ezdev.jp/?Rule03-2#o0dac69c">ルール原本</a>
           </li>
           <li>
             <h4 class="sample-list">table利用制限</h4>
@@ -60,6 +76,8 @@
             <p class="margin-left">
               ※googleフォント、住所自動入力のAjaxZip3は例外
             </p>
+
+            <a href="http://ezcodingrules.ezdev.jp/?Rule03#cdd8c185">ルール原本</a>
           </li>
           <li>
             <h4 class="sample-list">webフォント禁止</h4>
@@ -87,14 +105,15 @@
       </div>
       <div class="tabcontent caution">
         <h2>注意事項</h2>
-        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" target="_blank" href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
+        <h3 class="no-br">【EZgateコーディングルール】</h3><a class="margin-left" target="_blank"
+          href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
 
         <h3>【IE】</h3>
         <ul class="caution-list-ie">
           <li>
             <p class="sample-list">position</ｐ>
-            <p>top、leftなど縦横の値指定必須
-              <br>(⇒positionの初期位置設定が異なるため)</p>
+              <p>top、leftなど縦横の値指定必須
+                <br>(⇒positionの初期位置設定が異なるため)</p>
           </li>
           <li></li>
           <li></li>
@@ -116,7 +135,9 @@
         <ul>
           <li>
             <h4 class="sample-list">レスポンシブレイアウトへのBootstrapの導入</h4>
-            <p class="margin-left">公式サイト<a class="margin-left" target="_brank" href="https://getbootstrap.jp/docs/4.5/getting-started/introduction/">https://getbootstrap.jp/docs/4.5/getting-started/introduction/</a></p>
+            <p class="margin-left">公式サイト<a class="margin-left" target="_brank"
+                href="https://getbootstrap.jp/docs/4.5/getting-started/introduction/">https://getbootstrap.jp/docs/4.5/getting-started/introduction/</a>
+            </p>
           </li>
           <li>
             <h4 class="sample-list"></h4>
@@ -141,7 +162,8 @@
         <h2>参考・サンプルまとめ</h2>
         <ul>
           <li>
-            <p class="no-br sample-list">メールフォーム例</p><a class="margin-left" href="http://ezcodingrules.ezdev.jp/?Rule03#o17de83f">http://ezcodingrules.ezdev.jp/?Rule03#o17de83f</a>
+            <p class="no-br sample-list">メールフォーム例</p><a class="margin-left"
+              href="http://ezcodingrules.ezdev.jp/?Rule03#o17de83f">http://ezcodingrules.ezdev.jp/?Rule03#o17de83f</a>
             <input id="acd-check1" class="acd-check" type="checkbox">
             <label class="acd-label" for="acd-check1">クリックでコードを確認</label>
             <div class="acd-content">
@@ -220,7 +242,8 @@
           </li>
           <li>
             <p class="no-br sample-list">横ならび3列をきれいに書く</p>
-            <a class="margin-left" href="https://meshikui.com/2019/04/29/1710/">https://meshikui.com/2019/04/29/1710/</a>
+            <a class="margin-left"
+              href="https://meshikui.com/2019/04/29/1710/">https://meshikui.com/2019/04/29/1710/</a>
             <div class="sourceview">
               <pre class="brush: html;">
 横並び3列をレスポンシブにきれいに書くコード
@@ -280,7 +303,8 @@ pointer₋iventsを使用する際はIE対策に要素をblockまたはinline₋
           </li>
           <li>
             <p class="sample-list">ブラウザごとのflexのバグまとめ</p>
-            <p class="margin-left"><a href="https://qiita.com/hashrock/items/189db03021b0f565ae27" target="_blank">https://qiita.com/hashrock/items/189db03021b0f565ae27</a></p>
+            <p class="margin-left"><a href="https://qiita.com/hashrock/items/189db03021b0f565ae27"
+                target="_blank">https://qiita.com/hashrock/items/189db03021b0f565ae27</a></p>
           </li>
           <li>
             <p class="sample-list">IE読み込み時に、transitionが動作するバグへの対処</p>
@@ -307,10 +331,13 @@ $(window).on(&#039;load&#039; , function() {
           </li>
           <li>
             <p class="sample-list">レスポンシブ対応の枠</p>
-            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="tmgmgmg" data-slug-hash="ZEOrNwz" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="ZEOrNwz">
+            <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="tmgmgmg"
+              data-slug-hash="ZEOrNwz"
+              style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+              data-pen-title="ZEOrNwz">
               <span>See the Pen <a href="https://codepen.io/tmgmgmg/pen/ZEOrNwz">
-              ZEOrNwz</a> by tmgmgmg (<a href="https://codepen.io/tmgmgmg">@tmgmgmg</a>)
-              on <a href="https://codepen.io">CodePen</a>.</span>
+                  ZEOrNwz</a> by tmgmgmg (<a href="https://codepen.io/tmgmgmg">@tmgmgmg</a>)
+                on <a href="https://codepen.io">CodePen</a>.</span>
             </p>
             <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
           </li>
@@ -326,27 +353,32 @@ $(window).on(&#039;load&#039; , function() {
         <ul>
           <li>
             <h4 class="check-list">基本のHTML、CSS、JSセット</h4>
-            <a target="_blank" class="margin-left" href="https://github.com/tmgmgmg/basic-files">https://github.com/tmgmgmg/basic-files</a>
+            <a target="_blank" class="margin-left"
+              href="https://github.com/tmgmgmg/basic-files">https://github.com/tmgmgmg/basic-files</a>
           </li>
           <li>
             <h4 class="check-list">画像圧縮</h4>
             <p class="no-br margin-left compression">まとめて圧縮(5MBまで)
               <a class="margin-left" href="https://tinypng.com/" target="_blank">https://tinypng.com/</a>
               <br>jpg圧縮
-              <a class="margin-left" href="https://compressjpeg.com/ja/" target="_blank">https://compressjpeg.com/ja/</a>
+              <a class="margin-left" href="https://compressjpeg.com/ja/"
+                target="_blank">https://compressjpeg.com/ja/</a>
               <br>png圧縮
               <a class="margin-left" href="https://compresspng.com/ja/" target="_blank">https://compresspng.com/ja/</a>
-           target="_blank"  </p>
+              target="_blank" </p>
           </li>
           <li>
             <h4 class="check-list">動画圧縮</h4>
-            <a class="margin-left" href="https://www.videosmaller.com/jp/" target="_blank">https://www.videosmaller.com/jp/</a></li>
+            <a class="margin-left" href="https://www.videosmaller.com/jp/"
+              target="_blank">https://www.videosmaller.com/jp/</a>
+          </li>
           <li>
             <h4 class="check-list">画像フォルダ⇒「images」に統一する</h4>
           </li>
           <li>
             <h4 class="check-list">HTMLlintチェック</h4>
-            <p class="margin-left no-br">警告・エラーが無いことを確認する</p><a class="margin-left" href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+            <p class="margin-left no-br">警告・エラーが無いことを確認する</p><a class="margin-left" href="https://validator.w3.org/"
+              target="_blank">https://validator.w3.org/</a>
           </li>
           <li>
             <h4 class="check-list">仕様書との比較(例)</h4>
@@ -371,4 +403,5 @@ $(window).on(&#039;load&#039; , function() {
   <div class="bg-image02 town">
   </div>
 </body>
+
 </html>
