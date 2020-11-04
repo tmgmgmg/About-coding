@@ -14,7 +14,7 @@
   <h1 class="title">コーディングまとめ</h1>
   <div class="container">
     <div id="tab-container">
-      <div class="tab current-tab">命名規則・スタイル</div>
+      <div class="tab current-tab">基本事項</div>
       <div class="tab">禁止事項</div>
       <div class="tab">注意事項</div>
       <div class="tab">推奨事項</div>
@@ -23,12 +23,86 @@
     </div>
     <div id="tab-content">
       <div class="tabcontent tab-active">
-        <h2><span>命名規則・コーディングスタイル</span></h2>
-        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
-        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
-        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
-        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
-        <p>HTMLとCSSを使ったサンプルプログラムを作成します。</p>
+        <h2><span>基本事項</span></h2>
+        <h3></h3>
+        <ul>
+          <li>
+            <h3>見やすさ・編集のしやすさに努める</h3>
+            <h4 class="sample-list">コーディング記述は誰から見ても見やすいものにする</h4>
+            <ul>
+              <li>インデントは半角スペース2文字分（コードエディタで設定可能）</li>
+              <li>css記述は1行にしない</li>
+              <li>css記述はブロックごとに固める</li>
+              <div class="sourceview">
+                <pre class="brush: css;">
+                  .test {
+                    color: #fff;
+                  }
+                </pre>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <h3>正しい記述を心がける</h3>
+            <h4 class="sample-list">sectionタグ</h4>
+            <ul>
+              <li>hタグがある時のみsectionタグを使用する。なければdivタグを用いる。</li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="sample-list">hタグ（見出し）</h4>
+            <ul>
+              <li>h1,h2,h3…と階層的に使い分ける</li>
+              <li>h1タグはhtmlファイル1つにつき1回のみにとどめ、headerの会社ロゴ挿入に使う。この時のaltには仕様書の文言を入力する</li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="sample-list">tableタグ</h4>
+            <!-- <h4 class="sample-list">dlタグ</h4> -->
+            <ul>
+              <li>基本の形を崩さない</li>
+              <div class="sourceview">
+                <pre class="brush: html;">
+                  &lt;table&gt;
+                    &lt;tbody&gt;
+
+                      &lt;tr&gt;
+                        &lt;th&gt;table titleという意味。タイトルを記述する&lt;/th&gt;
+                        &lt;td&gt;table descriptionという意味。詳細を記述する&lt;/td&gt;
+                      &lt;/tr&gt;
+
+                      &lt;tr&gt;
+                        &lt;th&gt;table titleという意味。タイトルを記述する&lt;/th&gt;
+                        &lt;td&gt;table descriptionという意味。詳細を記述する&lt;/td&gt;
+                      &lt;/tr&gt;
+
+                    &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  <!-- 
+                    &lt;dl&gt;
+                    &lt;dt&gt;description termという意味。説明する言葉&lt;/dt&gt;
+                    &lt;dd&gt;definition / descriptionという意味。定義文 or 説明文&lt;/dd&gt;
+                    &lt;dd&gt;ddタグは複数記述して良い&lt;/dd&gt;
+                  &lt;/dl&gt; -->
+                </pre>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <h4 class="sample-list">ulタグliタグ</h4>
+            <ul>
+              <li>ulタグの中にliタグ以外を入れない</li>
+            </ul>
+          </li>
+          <li>
+            <h4 class="sample-list">brタグ、hrタグ</h4>
+            <ul>
+              <li>brタグを使った改行やhrタグを使った下線表示はしない</li>
+              <li>同様にhtmlタグで見栄えに関するタグの使用はしない</li>
+              <li>改行するときはspanタグを用いるか&lt;div class="p"&gt;で囲む</li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="tabcontent">
         <h2>禁止事項</h2>
@@ -36,19 +110,19 @@
           href="http://ezcodingrules.ezdev.jp/?EZ CordingRules">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
         <ul>
           <li>
-            <h4 class="sample-list">「./」禁止</h4>
-            </p>
+            <h4 class="sample-list">「./」記述禁止</h4>
             <p class="margin-left">以下のように書く。</p>
             <p class="margin-left">
               <div class="sourceview">
                 <pre class="brush: html;">
-              div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
+              ./img/home-img01.jpg → img/home-img01.jpg</pre>
               </div>
+              <p>./はデフォルトで省略可能の記述。ついたままだと先方のCMSで検索した際にヒットしなくなるため禁止</p>
             </p>
           </li>
           <li>
           <li>
-            <h4 class="sample-list">ｐタグ禁止</h4>
+            <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03-2#o0dac69c">ｐタグ禁止</a></h4>
             </p>
             <p class="margin-left">以下のように書く。</p>
             <p class="margin-left">
@@ -57,7 +131,6 @@
               &lt;div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
               </div>
             </p>
-            <a href="http://ezcodingrules.ezdev.jp/?Rule03-2#o0dac69c">ルール原本</a>
           </li>
           <li>
             <h4 class="sample-list">table利用制限</h4>
@@ -69,7 +142,7 @@
             </p>
           </li>
           <li>
-            <h4 class="sample-list">CDN禁止</h4>
+            <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03#cdd8c185">CDN禁止</a></h4>
             <p class="margin-left">
               jQueryなど使用の際はCDNではなく、ファイルを落としてきて、相対パスでリンクを貼る。
             </p>
@@ -77,7 +150,6 @@
               ※googleフォント、住所自動入力のAjaxZip3は例外
             </p>
 
-            <a href="http://ezcodingrules.ezdev.jp/?Rule03#cdd8c185">ルール原本</a>
           </li>
           <li>
             <h4 class="sample-list">webフォント禁止</h4>
@@ -87,7 +159,7 @@
             </p>
           </li>
           <li>
-            <h4 class="sample-list">画像ファイル名の_(アンダーバー)禁止</h4>
+            <h4 class="sample-list">画像・ファイル名の_(アンダーバー)禁止</h4>
             <p class="margin-left">―(ハイフン)は可。</p>
           </li>
           <li>
