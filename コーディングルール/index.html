@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>コーディングまとめ</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
@@ -26,11 +27,11 @@
       <div class="tabcontent tab-active">
         <h2>基本事項</h2>
         <ul>
-          <li><a href="#index01">見やすさ・編集のしやすさに努める</a></li>
-          <li><a href="#index02">正しい記述を心がける</a></li>
+          <li><a href="#index01">1.見やすさ・編集のしやすさに努める</a></li>
+          <li><a href="#index02">2.正しい記述を心がける</a></li>
         </ul>
         <!-- 見やすさ -->
-        <h3 id="index01">見やすさ・編集のしやすさに努める</h3>
+        <h3 id="index01">1.見やすさ・編集のしやすさに努める</h3>
         <ul>
           <li>
             <ul>
@@ -50,12 +51,10 @@
             </ul>
           </li>
           <li>
-            <ul>
-              <h4 class="sample-list">cssのプロパティをまとめる</h4>
-              <li>ショートハンドを使ってまとめてかける場合はまとめて書きます</li>
-              <li>css記述は1行にしない
-                <div class="sourceview">
-                  <pre class="brush: css;">
+            <h4 class="sample-list">cssのプロパティをまとめる</h4>
+            <p>ショートハンドを使ってまとめてかける場合はまとめて書く</p>
+            <div class="sourceview">
+              <pre class="brush: css;">
   【ショートハンドなし】
   .cell {
     margin-top: 112px;
@@ -74,80 +73,68 @@
     padding: 26px 0 84px;
   }
                     </pre>
-                </div>
-              </li>
-            </ul>
+            </div>
           </li>
           <li>
-            <ul>
-              <h4 class="sample-list">色指定の16進数は短縮出来るならする</h4>
-              <li>色の指定が3桁表記可能ならば短縮します。</li>
-              <li>
-                <div class="sourceview">
-                  <pre class="brush: css;">
-  【改善前】
-  .modal {
-    color: #000000;
-  }
-  .content {
-    color: #33bb00;
-  }
-
-  【改善後】
-  .modal {
-    color: #000;
-  }
-  .content {
-    color: #3b0;
-  }
-                    </pre>
-                </div>
-              </li>
-            </ul>
+            <h4 class="sample-list">色指定の16進数は短縮</h4>
+            <p>色の指定が3桁表記可能ならば短縮</p>
+            <div class="sourceview">
+              <pre class="brush: css;">
+    【改善前】
+    .modal {
+      color: #000000;
+    }
+    .content {
+      color: #33bb00;
+    }
+  
+    【改善後】
+    .modal {
+      color: #000;
+    }
+    .content {
+      color: #3b0;
+    }
+                      </pre>
+            </div>
           </li>
           <li>
             <h4 class="sample-list">インライン指定をしない</h4>
             <p>htmlファイルへ直接styleの記述をせず、cssファイルへ記述する</p>
           </li>
           <li>
-            <ul>
-              <h4 class="sample-list">!importantは極力使わない</h4>
-              <li>基本的には使用しない。!importantを使いたくなる時はcssが複雑化していることが考えられるため構造をシンプルにすることでデザインを実現できないか検討する</li>
-              <li>詳細度を計算するよりも使用した方が簡単な場合もあるのでやむを得ない場合のみ使用する</li>
-            </ul>
+            <h4 class="sample-list">!importantは極力使わない</h4>
+            <p>基本的には使用しない。!importantを使いたくなる時はcssが複雑化していることが考えられるため構造をシンプルにすることでデザインを実現できないか検討する</p>
+            <p>詳細度を計算するよりも使用した方が簡単な場合もあるのでやむを得ない場合のみ使用する</p>
+          </li>
           </li>
           <li>
-            <h4 class="sample-list">
-              <a href="http://ezcodingrules.ezdev.jp/?Rule07#fc2364bb" target="_blank"
-                rel="noopener noreferrer">cssで使用しないidやclassの記述を消す</a>
-            </h4>
-            <p>cssで使用しないidやclassの記述を残さず、提出時には削除して下さい。</p>
+            <h4 class="sample-list">cssで使用しないidやclassの記述を消す</h4>
+            <p>cssで使用しないidやclassの記述を残さず、提出時には削除する</p>
           </li>
         </ul>
+
+
+        </ul>
         <!-- 正しい記述 -->
-        <h3 id="index02">正しい記述を心がける</h3>
+        <h3 id="index02">2.正しい記述を心がける</h3>
         <ul>
           <li>
             <h4 class="sample-list">sectionタグ</h4>
-            <ul>
-              <li>hタグがある時のみsectionタグを使用する。なければdivタグを用いる。</li>
-            </ul>
+            <p>hタグがある時のみsectionタグを使用する。なければdivタグを用いる</p>
           </li>
           <li>
             <h4 class="sample-list">hタグ（見出し）</h4>
-            <ul>
-              <li><a href="http://ezcodingrules.ezdev.jp/?Rule03-2#num08" target="_blank"
-                  rel="noopener noreferrer">h1,h2,h3…と階層的に使い分ける</a></li>
-              <li>h1タグはhtmlファイル1つにつき1回のみにとどめ、headerの会社logoイメージ挿入等に使う。この時のaltには仕様書の文言を入力する</li>
-            </ul>
+            <p>h1,h2,h3…と階層的に使い分ける</p>
+            <p>h1タグはhtmlファイル1つにつき1回のみにとどめ、headerの会社logoイメージ挿入等に使う</p>
+
           </li>
           <li>
             <h4 class="sample-list">tableタグ</h4>
             <!-- <h4 class="sample-list">dlタグ</h4> -->
-            <ul>
-              <li>基本の形を崩さない</li>
-              <div class="sourceview">
-                <pre class="brush: html;">
+            <p>基本の形を崩さない</p>
+            <div class="sourceview">
+              <pre class="brush: html;">
   &lt;table&gt;
     &lt;tbody&gt;
 
@@ -170,51 +157,43 @@
                       &lt;dd&gt;ddタグは複数記述して良い&lt;/dd&gt;
                     &lt;/dl&gt; -->
                   </pre>
-              </div>
-            </ul>
+            </div>
           </li>
           <li>
             <h4 class="sample-list">ulタグliタグ</h4>
-            <ul>
-              <li>ulタグの中にliタグ以外を入れない</li>
-            </ul>
+            <p>ulタグの中にliタグ以外を入れない</p>
           </li>
           <li>
             <h4 class="sample-list">brタグ、hrタグ</h4>
-            <ul>
-              <li>brタグを使った改行やhrタグを使った下線表示はしない</li>
-              <li>同様にhtmlタグで見栄えに関するタグの使用はしない</li>
-              <li>改行するときはspanタグを用いるか&lt;div class="p"&gt;で囲む</li>
-            </ul>
+            <p>brタグを使った改行やhrタグを使った下線表示はしない</p>
+            <p>同様にhtmlタグで見栄えに関するタグの使用はしない</p>
+            <p>改行するときはspanタグを用いるか&lt;div class="p"&gt;で囲む</p>
           </li>
           <li>
             <h4 class="sample-list">id</h4>
-            <ul>
-              <li>cssは基本的にidに記述しない</li>
-            </ul>
+            <p>cssは基本的にidに記述しない</p>
           </li>
         </ul>
       </div>
       <div class="tabcontent">
         <h2>ezgateコーディングルールまとめ</h2>
         <ul>
-          <li><a href="#ezgate01">禁止事項</a></li>
-          <li><a href="#ezgate02">注意事項</a></li>
+          <li><a href="#ezgate01">1.禁止事項</a></li>
+          <li><a href="#ezgate02">2.注意事項</a></li>
+          <li><a href="#ezgate03">3.チェックリスト</a></li>
         </ul>
-        <p class="no-br">【EZgateコーディングルール】</p><a class="margin-left" target="_blank"
-          href="http://ezcodingrules.ezdev.jp/?EZ CordingRules" target="_blank"
-          rel="noopener noreferrer">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a>
-        <p>タイトルを押すと【EZgateコーディングルール】の該当部分へリンクします</p>
+        <p class="no-br">【EZgateコーディングルール】<a class="margin-left" target="_blank"
+            href="http://ezcodingrules.ezdev.jp/?EZ CordingRules" target="_blank"
+            rel="noopener noreferrer">http://ezcodingrules.ezdev.jp/?EZ CordingRules</a></p>
         <!-- 禁止事項 -->
-        <h3 id="ezgate01">禁止事項</h2>
+        <h3 id="ezgate01">1.禁止事項</h2>
           <ul>
             <li>
               <h4 class="sample-list">「./」記述禁止</h4>
               <p class="margin-left">以下のように書く。</p>
               <p class="margin-left">
                 <div class="sourceview">
-                  <pre class="brush: html;">
-              ./img/home-img01.jpg → img/home-img01.jpg</pre>
+                  <pre class="brush: html;">./img/home-img01.jpg → img/home-img01.jpg</pre>
                 </div>
                 <p>./はデフォルトで省略可能の記述。ついたままだと先方のCMSで検索した際にヒットしなくなるため禁止</p>
               </p>
@@ -223,28 +202,29 @@
               <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03-2#o0dac69c" target="_blank"
                   rel="noopener noreferrer">ｐタグ禁止</a></h4>
               </p>
-              <p class="margin-left">以下のように書く。</p>
+              <p class="margin-left">以下のように書く</p>
               <p class="margin-left">
                 <div class="sourceview">
-                  <pre class="brush: html;">
-              &lt;div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
+                  <pre class="brush: html;">&lt;div class=&quot;p&quot;&gt;○○○○&lt;/div&gt;</pre>
                 </div>
               </p>
             </li>
             <li>
-              <h4 class="sample-list">table利用制限</h4>
+              <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03#num08" target="_blank"
+                  rel="noopener noreferrer">
+                  table利用制限</a></h4>
               <p class="margin-left">tableタグは、
                 <br>・お問い合わせ
                 <br>・会社内容
                 <br>・採用情報
-                <br>といった指定の場所以外は使用しない。
+                <br>といった指定の場所以外は使用しない
               </p>
             </li>
             <li>
               <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03#cdd8c185" target="_blank"
                   rel="noopener noreferrer">CDN禁止</a></h4>
               <p class="margin-left">
-                jQueryなど使用の際はCDNではなく、ファイルを落としてきて、相対パスでリンクを貼る。
+                jQueryなど使用の際はCDNではなく、ファイルを落としてきて、相対パスでリンクを貼る
               </p>
               <p class="margin-left">
                 ※googleフォント、住所自動入力のAjaxZip3は例外
@@ -254,14 +234,14 @@
             <li>
               <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule02#num03" target="_blank"
                   rel="noopener noreferrer">webフォント禁止</a></h4>
-              <p class="margin-left">指定のgoogleフォントのみ使用可。</p>
-              <p class="margin-left">googleフォントにないフォントの指示があった場合は、画像としてpsdから切り出す。
+              <p class="margin-left">指定のgoogleフォントのみ使用可</p>
+              <p class="margin-left">googleフォントにないフォントの指示があった場合は、画像としてpsdから切り出す
                 <br><span class="red">※imgタグのalt属性には、切り出した文章を全て入力すること</span>
               </p>
             </li>
             <li>
               <h4 class="sample-list">画像・ファイル名の_(アンダーバー)禁止</h4>
-              <p class="margin-left">―(ハイフン)は可。</p>
+              <p class="margin-left">―(ハイフン)は可</p>
             </li>
             <li>
               <h4 class="sample-list">Bootstrapのclass名に直接styleの指定禁止</h4>
@@ -270,13 +250,13 @@
                 ・row<br>
                 ・flex<br>
                 ・col-6<br>
-                などに直接styleの指定はNG。
+                などに直接styleの指定はNG
               </p>
               <p class="margin-left"></p>
             </li>
           </ul>
           <!-- 注意事項 -->
-          <h3 id="ezgate02">注意事項</h3>
+          <h3 id="ezgate02">2.注意事項</h3>
           <ul class="caution-list-ie">
 
             <li>
@@ -307,12 +287,15 @@
             <li>
               <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03#o61bd5ce" target="_blank"
                   rel="noopener noreferrer">メールフォーム</a></h4>
-              <p>先方指定のコーディング方法があるので確認して下さい</p>
+              <p>先方指定のコーディング方法があるため要確認</p>
             </li>
             <li>
               <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03#num09" target="_blank"
                   rel="noopener noreferrer">メールフォーム住所自動入力</a></h4>
-              <p>住所自動入力AjaxZip3のCDNは例外となっているためリンク先のコードを使う</p>
+              <p>住所自動入力AjaxZip3のCDNは例外となっているためメールフォームのheadに記述する</p>
+              <div class="sourceview">
+                <pre class="brush: html;">&lt;script src="https://ajaxzip3.github.io/ajaxzip3.js"&gt;</pre>
+              </div>
             </li>
             <li>
               <h4 class="sample-list"><a href="http://ezcodingrules.ezdev.jp/?Rule03#k57ebbcb" target="_blank"
@@ -326,27 +309,65 @@
             </li>
 
           </ul>
+          <!-- チェックリスト -->
+          <h3 id="ezgate03">3.チェックリスト</h3>
+          <ul>
+            <li>
+              <h4 class="check-list">基本のHTML、CSS、JSセット</h4>
+              <a target="_blank" rel="noopener noreferrer" class="margin-left"
+                href="https://github.com/tmgmgmg/basic-files">https://github.com/tmgmgmg/basic-files</a>
+            </li>
+            <li>
+              <h4 class="check-list">画像フォルダ⇒「images」に統一する</h4>
+            </li>
+            <li>
+              <h4 class="check-list">HTMLlintチェック</h4>
+              <p class="margin-left no-br">警告・エラーが無いことを確認する</p><a class="margin-left" href="https://validator.w3.org/"
+                target="_blank" rel="noopener noreferrer">https://validator.w3.org/</a>
+            </li>
+            <li>
+              <h4 class="check-list">仕様書との比較(例)</h4>
+              <a class="margin-left sample-img" href="images/layout.jpg" target="_blank"
+                rel="noopener noreferrer">仕様書</a>
+              <br>
+              <a class="margin-left sample-img" href="images/sample.png" target="_blank"
+                rel="noopener noreferrer">作成ページ</a>
+            </li>
+            <li>
+              <h4 class="check-list">レスポンシブのサイズは992px,576px,480px</h4>
+            </li>
+          </ul>
       </div>
       <div class="tabcontent caution">
         <h2>MEOLP</h2>
         <ul>
-          <li><a href="#lp01">見やすさ・編集のしやすさに努める</a></li>
-          <li><a href="#lp02">正しい記述を心がける</a></li>
+          <li><a href="#lp01">1.見出し見出し</a></li>
+          <li><a href="#lp02">2.見出し2見出し2</a></li>
         </ul>
-        <h3 id="ezgate01">禁止事項</h2>
+        <h3 id="lp01">1.見出し見出し</h2>
           <ul>
             <li>
-              <h4 class="sample-list">「./」記述禁止</h4>
-              <p class="margin-left">以下のように書く。</p>
+              <h4 class="sample-list">タイトル</h4>
+              <p class="margin-left">詳細テキスト</p>
               <p class="margin-left">
                 <div class="sourceview">
-                  <pre class="brush: html;">
-              ./img/home-img01.jpg → img/home-img01.jpg</pre>
+                  <pre class="brush: html;">見本html記述</pre>
                 </div>
-                <p>./はデフォルトで省略可能の記述。ついたままだと先方のCMSで検索した際にヒットしなくなるため禁止</p>
               </p>
             </li>
           </ul>
+          <h3 id="lp02">2.見出し2見出し2</h2>
+            <ul>
+              <li>
+                <h4 class="sample-list">タイトル</h4>
+                <p class="margin-left">詳細テキスト</p>
+                <p class="margin-left">
+                  <div class="sourceview">
+                    <pre class="brush: html;">見本html記述</pre>
+                  </div>
+                </p>
+              </li>
+            </ul>
       </div>
       <div class="tabcontent">
         <h2>推奨事項</h2>
