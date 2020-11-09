@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+h3{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.star{
+  margin-top: 100px;
+}
+.star table{
+  margin-top: 20px;
+}
+.star th,.star td{
+  display: block;
+}
+img{
+  width: 100%;
+}
+.box{
+  margin: 50px 0;
+}

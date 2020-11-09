@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ul, ol{
+  list-style: none;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+header{
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 18px;
+  height: 100px;
+}
+.navbar{
+  margin-bottom: 0;
+  border: none;
+}
+.navbar-default{
+  background-image: url(../images/bg_wht.jpg);
+  height: 100px;
+  padding: 0 40px;
+  background-color: #fff;
+}
+.header_logo{
+  float: left;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+a{
+  color: inherit;
+  transition: .3s;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+img{
+  border: 0;
+  vertical-align: bottom;
+}
+
+
+.collapse{
+  margin-right: 15px;
+}
+.header_tel{
+  text-align: right;
+  font-size: 24px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  padding-right: 12px;
+}
+.header_tel i{
+  transform: rotate(-225deg);
+  color: #129944;
+}
+
+.nav li{
+  position: relative;
+}
+.nav > li > a{
+  padding:10px 25px;
+  color: #060a05 !important;
+  transition: .3s;
+}
+.nav li:not(:last-child)::after{
+  content: "|";
+  position: absolute;
+  top: 18%;
+  right: 0;
+  color: #868686;
+}
+
+.current{
+  border-bottom: 2px solid #129944;
+}
+
+
+
+
+@media only screen and (max-width: 1300px){
+  header{
+    font-size: 16px;
+  }
+  .header_logo{
+    width: 280px;
+    padding-left: 15px;
+    padding-top: 20px;
+  }
+  .header_logo img{
+    width: 100%;
+  }
+  .nav > li > a{
+    padding: 10px 15px;
+  }
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 991px)
+{
+  header .navbar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    text-align: right;
+  }
+  .navbar-default{
+    height: 70px;
+    padding: 0;
+  }
+  .navbar-header{
+    float: none;
+    position: fixed;
+    width: 100%;
+    background-image: url(../images/bg_wht.jpg);
+    background-color: #fff;
+  }
+  .navbar-default .navbar-toggle{
+    margin: 18px 15px;
+  }
+  .navbar-toggle{
+    display: block;
+  }
+  .header_logo{
+    width: 280px;
+    padding-top: 10px;
+  }
+  .header_logo img{
+    width: 100%;
+    height: auto;
+  }
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse{
+    max-height: 80vh;
+  }
+  .navbar-collapse.collapse{
+    display: none !important;
+  }
+  .header_tel{
+    text-align: center;
+    font-size: 22px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+  header .navbar-nav{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #fff;
+  }
+  .navbar-nav{
+    float: none !important;
+  }
+  header .navbar-nav li{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  .navbar-nav > li{
+    float: none;
+  }
+  header .navbar-nav li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    color: #fff;
+  }
+  .current{
+    border-bottom: none;
+  }
+  .navbar-collapse.collapse.in{
+    display: block !important;
+    margin-right: 0;
+    position: fixed;
+    width: 100%;
+    margin-top: 70px;
+  }
+  header .navbar-collapse{
+    background-color: #fff;
+    padding: 0;
+    overflow: visible;
+    opacity: 0;
+    transition: .4s;
+  }
+  header .navbar-collapse.in{
+    opacity: 1;
+  }
+
+
+
+}

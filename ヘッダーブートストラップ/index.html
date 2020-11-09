@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ヘッダーで使うブートストラップ</title>
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Noto+Sans+JP:wght@400;500&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jquery-2.2.3.min.js" type="text/javascript"></script>
+  <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://www.isshin.co.jp/js/bootstrap.min.js"></script>
+  <script src="./js/fontawesome.js" type="text/javascript"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <!-- ハンバーガー -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#gnavi">
+          <span class="sr-only">メニュー</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- /ハンバーガー -->
+        <!-- ロゴ -->
+        <div class="header_logo">
+          <h1><a href="#"><img src="https://www.isshin.co.jp/images/logo.png" alt=""></a></h1>
+        </div>
+      </div>
+      <!-- /ロゴ -->
+
+      <div id="gnavi" class="collapse navbar-collapse">
+        <p class="header_tel"><span data-action="call"><i class="fas fa-phone"></i>0120-123-456</span></p>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="nav-jp current">HOME</span></a></li>
+          <li><a href="#"><span class="nav-jp">会社案内</span></a></li>
+          <li><a href="#"><span class="nav-jp">商品紹介</span></a></li>
+          <li><a href="#"><span class="nav-jp">OEM</span></a></li>
+          <li><a href="#"><span class="nav-jp">品質への取り組み</span></a></li>
+          <li><a href="#"><span class="nav-jp">お問い合わせ</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container star">
+    <h2>ヘッダーで使うブートストラップ</h2>
+    <div class="box">
+      <h3>・ヘッダー左側（ロゴ、隠れてるハンバーガー）</h3>
+      <img src="./images/code01.png" alt="">
+      <table>
+        <tr>
+          <th>navbar-header（左側のロゴ部分&ハンバーガーが入っている）</th>
+          <td>768px以上の時にfloat:leftがかかっているので、右のメニューが下に回り込まない。同じラインで直線に並べられる。</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>.navbar-toggle（ハンバーガー　button type=“button”で作る。）</th>
+          <td>768px以上の時は非表示。　「◯◯px以下で表示」は任意のcssに書く。</td>
+          <td>また、位置もpositionで設定されている。</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>.icon-bar（ハンバーガーの三本線）</th>
+          <td>bootstrapのままではクリックしても「×」にならないので任意で書く必要あり。</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="box">
+      <h3>・ヘッダー右側（ナビゲーション）</h3>
+      <img src="./images/code02.png" alt="">
+      <table>
+        <tr>
+          <th>.navbar-right（ナビゲーションのulにつける）</th>
+          <td>768px以上の時にfloat:rightがかかっている</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>.navbar-nav > li（ナビゲーションのリスト）</th>
+          <td>768px以上の時、float:left;がかかっている</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!-- <div class="container">
+    <img src="./images/code.png" alt="">
+  </div> -->
+
+</body>
+</html>
